@@ -39,7 +39,7 @@ docker build -t backend_puc_rio_sprint_3_mvp .
 ```
 - Mapeie a porta local 4000 do host para a porta 4000 do container
 ```
-docker run -e API_EXTERNA_DATABASE_ID=XXXXXXXXXXX -e API_EXTERNA_TOKEN=YYYYYYYYYYYY  -d -p 4000:4000 backend_puc_rio_sprint3_mvp
+docker run -e API_EXTERNA_DATABASE_ID=XXXXXXXXXXX -e API_EXTERNA_TOKEN=YYYYYYYYYYYY  -d -p 4000:4000 backend_puc_rio_sprint_3_mvp
 ```
 - Acesse a URL http://localhost:4000 no navegador para confirmar que o o servidor está rodando. Uma mensagem informando que o servidor está operacional será informada na tela.
 
