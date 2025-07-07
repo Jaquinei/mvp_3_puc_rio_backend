@@ -47,7 +47,7 @@ docker run -e API_EXTERNA_DATABASE_ID=XXXXXXXXXXX -e API_EXTERNA_TOKEN=YYYYYYYYY
 
 ## Front-End (Interface)
 
-O Front-End foi desenvolvido usando *React*, *Material UI*, *CSS* e *JavaScript*. Pode ser usado independentemente do Back-End, mas para acessar a API externa do Notioné necessário que o Back-End esteja rodando.
+O Front-End foi desenvolvido usando *React*, *Material UI*, *CSS* e *JavaScript*. Pode ser usado independentemente do Back-End, mas para acessar a API externa do Notion é necessário que o Back-End esteja rodando.
 
 O código do Front-End está disponível em outro repositório. Para detalhes sobre o projeto do Front-End, acesse o repositório https://github.com/Jaquinei/mvp_3_puc_rio_frontend
 
@@ -58,9 +58,9 @@ A REST API é disponibilizada pelo Back-End e apresenta as seguintes rotas:
     GET /
 Redireciona para o Swagger
 
-    POST /notion-data
+    POST /notion
 Acessa dados de uma API externa do Notion.
-Requisitos: DATABASE_ID e TOKEN devem ser fornecidos.
+Requisitos: API_EXTERNA_DATABASE_ID e API_EXTERNA_TOKEN devem ser fornecidos.
 
 ## Acesso a uma API externa
 
@@ -87,16 +87,16 @@ Após clonar o repositório, é necessário ir ao diretório raiz, pelo terminal
 
 Installe todas as dependencias necessárias para rodar o projeto
 ```
-(env)$ npm install
+$ npm install
 ```
 > Este comando instala as dependências/bibliotecas, descritas no arquivo `package.json`.
 
 Para executar o Back-End que expõe a API:
 
 ```
-(env)$ npm start
+$ npm start
 ```
-> A porta **4000** está hardcode no projeto do Backs-End.
+> A porta **4000** está hardcode no projeto do Back-End.
 
 Abra o link [http://localhost:4000](http://localhost:4000/) no navegador para verificar o status da API em execução.
 
@@ -121,6 +121,6 @@ docker build -t backend_puc_rio_sprint_3_mvp .
 ```
 - Mapeia a porta local 4000 do host para a porta 4000 do container
 ```
-docker run -e API_EXTERNA_DATABASE_ID=22816f12775a80beaa58d7458bc9e47d -e API_EXTERNA_TOKEN=ntn_w61584484743w1EmbleZVz4HVB1kf761CRcCHZgwhkl6MG  -d -p 4000:4000 backend_puc_rio_sprint_3_mvp
+docker run -e API_EXTERNA_DATABASE_ID=XXXXXXX -e API_EXTERNA_TOKEN=YYYYYYYY  -d -p 4000:4000 backend_puc_rio_sprint_3_mvp
 ```
 - Acesse a URL http://localhost4000 no navegador para ter acesso ao SWAGGER
