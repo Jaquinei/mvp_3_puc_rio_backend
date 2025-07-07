@@ -123,4 +123,4 @@ docker build -t backend_puc_rio_sprint_3_mvp .
 ```
 docker run -e API_EXTERNA_DATABASE_ID=XXXXXXX -e API_EXTERNA_TOKEN=YYYYYYYY  -d -p 4000:4000 backend_puc_rio_sprint_3_mvp
 ```
-- Acesse a URL http://localhost4000 no navegador para ter acesso ao SWAGGER
+- Acesse a URL http://localhost4000 no navegador para verificar se o servidor está operacional
