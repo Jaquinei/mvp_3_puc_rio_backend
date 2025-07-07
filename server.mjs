@@ -45,6 +45,14 @@ app.post('/notion', async (req, res) => {
   }
 });
 
+app.get('/', (req, res) => {
+  if (!NOTION_DATABASE_ID || !NOTION_TOKEN) {    
+    res.send('TOKEN and DATABASE info missing. Ensure to set API_EXTERNA_DATABASE_ID and API_EXTERNA_TOKEN environment variables');
+    return;
+  } 
+  res.send('Server is up and running');
+});
+
 if (!NOTION_DATABASE_ID || !NOTION_TOKEN) {
   console.log('[SERVER] (warning) TOKEN and DATABASE info is missing!');
   console.log('[SERVER] (warning) Requests will fail.');

@@ -20,7 +20,7 @@ As instruções para fazer o build da imagem e rodar os container estão na seç
 
 ## Back-End (*API*)
 
- O Back-End foi desenvolvido utilizando Node.js, com o framework Express como servidor web. O Backend disponibiliza uma API REST que é consumida pelo Front-End. Esta API possibilita que dados disponíveis no Notion sejam disponibilizados para o Front-End. O acesso aos dados do Notion é realizado pelo Back-End através da API disponibilizada pelo Notion.
+ O Back-End foi desenvolvido utilizando Node.js com o framework Express como servidor web. O Backend disponibiliza uma API REST que é consumida pelo Front-End. Esta API possibilita que dados disponíveis no Notion sejam consumidos pelo Front-End. O acesso aos dados do Notion é realizado pelo Back-End através da API disponibilizada pelo Notion.
 
 O código do Back-End está disponível neste repositorio.
 
