@@ -95,9 +95,10 @@ Este comando instala as dependências/bibliotecas, descritas no arquivo `package
 Crie um arquivo na raiz do projeto chamado *.env* com duas entradas (API_EXTERNA_DATABASE_ID e API_EXTERNA_TOKEN):
 
 ```
-API_EXTERNA_DATABASE_ID=xxxxx
-API_EXTERNA_TOKEN=xxxxx
+API_EXTERNA_DATABASE_ID=XXXXXXX
+API_EXTERNA_TOKEN=YYYYYYYY
 ```
+Substitua XXXXXXX e YYYYYYYY com o as informações providenciadas por e-mail durante a submissão do projeto pelo Portal da PUC-RIO.
 
 Para executar o Back-End que expõe a API:
 
