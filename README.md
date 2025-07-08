@@ -92,6 +92,13 @@ $ npm install
 
 Este comando instala as dependências/bibliotecas, descritas no arquivo `package.json`.
 
+Crie um arquivo na raiz do projeto chamado *.env* com duas entradas (API_EXTERNA_DATABASE_ID e API_EXTERNA_TOKEN):
+
+```
+API_EXTERNA_DATABASE_ID=xxxxx
+API_EXTERNA_TOKEN=xxxxx
+```
+
 Para executar o Back-End que expõe a API:
 
 ```
