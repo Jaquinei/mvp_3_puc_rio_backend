@@ -12,7 +12,7 @@ Este repositorio faz parte do MVP e contem o código para o Back-End e o código
 
 O Back-End disponibilizado neste repositório contem o docker file possibilitando rodar containerizado. 
 
-As instruções para fazer o build da imagem e rodar os container estão na seção [Como iniciar o Back-End usando o docker](#como-iniciar-o-backend-usando-o-docker)
+As instruções para fazer o build da imagem e rodar os container estão na seção [Como iniciar o Back-End usando o docker](#como-iniciar-o-back-end-usando-o-docker)
 
 **Este README foca nos detalhes de setup e uso do projeto do Back-End.**
 
@@ -89,20 +89,21 @@ Installe todas as dependencias necessárias para rodar o projeto
 ```
 $ npm install
 ```
-> Este comando instala as dependências/bibliotecas, descritas no arquivo `package.json`.
+
+Este comando instala as dependências/bibliotecas, descritas no arquivo `package.json`.
 
 Para executar o Back-End que expõe a API:
 
 ```
 $ npm start
 ```
-> A porta **4000** está hardcode no projeto do Back-End.
+A porta **4000** está hardcode no projeto do Back-End.
 
 Abra o link [http://localhost:4000](http://localhost:4000/) no navegador para verificar o status da API em execução.
 
 External API access
 
-Para acessar o database do Notion, é possível usar o seguinte comando:
+Para acessar o database do Notion diretamente, é possível usar o seguinte comando:
 
 ```
 curl -X POST \
@@ -121,6 +122,6 @@ docker build -t backend_puc_rio_sprint_3_mvp .
 ```
 - Mapeia a porta local 4000 do host para a porta 4000 do container
 ```
-docker run -e API_EXTERNA_DATABASE_ID=XXXXXXX -e API_EXTERNA_TOKEN=YYYYYYYY  -d -p 4000:4000 backend_puc_rio_sprint_3_mvp
+docker run -e API_EXTERNA_DATABASE_ID=XXXXXXX -e API_EXTERNA_TOKEN=YYYYYYYY -d -p 4000:4000 backend_puc_rio_sprint_3_mvp
 ```
 - Acesse a URL http://localhost4000 no navegador para verificar se o servidor está operacional
